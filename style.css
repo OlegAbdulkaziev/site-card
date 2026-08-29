@@ -1,0 +1,279 @@
+:root {
+  --bg: #FAFAF8;
+  --ink: #1A1D23;
+  --ink-soft: #5B6270;
+  --accent: #3A5A78;
+  --accent-soft: #E8EEF2;
+  --line: #E4E2DC;
+  --max-width: 680px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 96px 24px 64px;
+}
+
+/* Language toggle */
+.lang-toggle {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  z-index: 10;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 4px 2px;
+}
+
+.lang-btn.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.lang-sep {
+  color: var(--line);
+  margin: 0 2px;
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 56px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  font-size: 17px;
+  color: var(--ink-soft);
+  max-width: 52ch;
+  margin: 0 0 28px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: opacity 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.btn-secondary {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  opacity: 0.8;
+}
+
+/* Wave divider — signature element, nods to the audio/STT-TTS work */
+.wave-divider {
+  margin: 48px 0;
+  color: var(--accent);
+  opacity: 0.5;
+}
+
+.wave-divider svg {
+  width: 100%;
+  height: 20px;
+}
+
+.wave-divider polyline {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin: 0 0 28px;
+}
+
+/* Roles */
+.role {
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.role:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.role-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.role-head h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.role-sub {
+  font-weight: 400;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+
+.role-period {
+  font-size: 13px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.role-title {
+  font-size: 15px;
+  color: var(--accent);
+  margin: 4px 0 12px;
+  font-weight: 500;
+}
+
+.role-points {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.role-points li {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+
+.role-points li:last-child {
+  margin-bottom: 0;
+}
+
+/* Skills */
+.skills {
+  list-style: none;
+  margin: 0 0 56px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills li {
+  font-size: 13px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  font-size: 14px;
+  color: var(--ink-soft);
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.footer a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: var(--accent);
+}
+
+.footer .dot {
+  margin: 0 8px;
+  color: var(--line);
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .page {
+    padding: 72px 20px 48px;
+  }
+  .name {
+    font-size: 32px;
+  }
+  .tagline {
+    font-size: 16px;
+  }
+  .role-head {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
