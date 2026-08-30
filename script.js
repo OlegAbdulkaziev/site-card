@@ -8,6 +8,11 @@ function setLang(lang) {
   document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
   document.getElementById('btn-en').classList.toggle('active', lang === 'en');
 
+  var cv = document.getElementById('cv-link');
+  if (cv) {
+    cv.href = cv.getAttribute('data-cv-' + lang);
+  }
+
   localStorage.setItem('site-lang', lang);
 }
 

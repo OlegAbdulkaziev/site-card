@@ -34,7 +34,7 @@
 
     <div class="hero-actions">
       <a class="btn-primary" href="mailto:abdulkaziev@gmail.com" data-ru="Написать" data-en="Email me">Написать</a>
-      <a class="btn-secondary" href="Oleg_Abdulkaziev_CV.pdf" download data-ru="Скачать CV" data-en="Download CV">Скачать CV</a>
+      <a id="cv-link" class="btn-secondary" href="Oleg_Abdulkaziev_CV.pdf" download data-ru="Скачать CV" data-en="Download CV" data-cv-ru="Oleg_Abdulkaziev_CV.pdf" data-cv-en="Oleg_Abdulkaziev_CV_EN.pdf">Скачать CV</a>
     </div>
   </header>
 
@@ -54,9 +54,12 @@
       </div>
       <p class="role-title" data-ru="Head of Product — платформа STT/TTS Audiogram" data-en="Head of Product — Audiogram STT/TTS platform">Head of Product — платформа STT/TTS Audiogram</p>
       <ul class="role-points">
-        <li data-ru="Сформировал продуктовый vision и roadmap; руководство распределённой командой 70+ специалистов" data-en="Defined product vision and roadmap; led a distributed team of 70+ specialists">Сформировал продуктовый vision и roadmap; руководство распределённой командой 70+ специалистов</li>
-        <li data-ru="Одно из лучших распознаваний речи на русском языке на рынке: WER на реальных данных &lt;10%" data-en="Built one of the best Russian-language speech recognition systems on the market: WER &lt;10% on real data">Одно из лучших распознаваний речи на русском языке на рынке: WER на реальных данных &lt;10%</li>
-        <li data-ru="Синтез речи с MOS &gt;4.3 — на уровне мировых лидеров; запуск продукта «Антиспуфинг» (EER ~1%)" data-en="Speech synthesis with MOS &gt;4.3 — on par with global leaders; launched an anti-spoofing product (EER ~1%)">Синтез речи с MOS &gt;4.3 — на уровне мировых лидеров; запуск продукта «Антиспуфинг» (EER ~1%)</li>
+        <li data-ru="Сформировал продуктовый vision и перестроил под него roadmap; ввёл квартальное планирование — снизу от команд и сверху от стейкхолдеров" data-en="Set the product vision and rebuilt the roadmap around it; introduced quarterly planning combining bottom-up team input with top-down stakeholder goals">Сформировал продуктовый vision и перестроил под него roadmap; ввёл квартальное планирование — снизу от команд и сверху от стейкхолдеров</li>
+        <li data-ru="Руководил распределённой командой 70+ (около половины — ML-инженеры) в цикле ресёрч → обучение → продуктивизация; сократил состав до 25 без падения производительности — за счёт чёткого фокуса, меньшей бюрократии и ставки на сильных исполнителей" data-en="Led a distributed team of 70+ (about half ML engineers) across research → training → productization; cut it to 25 with no loss of output — through sharper focus, less bureaucracy and a bet on strong performers">Руководил распределённой командой 70+ (около половины — ML-инженеры) в цикле ресёрч → обучение → продуктивизация; сократил состав до 25 без падения производительности — за счёт чёткого фокуса, меньшей бюрократии и ставки на сильных исполнителей</li>
+        <li data-ru="Довёл распознавание речи до одного из лучших на рынке для русского языка: ансамбль моделей под разные поверхности, фокус на телефонии, WER &lt;10% на реальных данных" data-en="Built one of the market's best Russian speech recognition: an ensemble of models per surface, telephony focus, WER &lt;10% on real-world audio">Довёл распознавание речи до одного из лучших на рынке для русского языка: ансамбль моделей под разные поверхности, фокус на телефонии, WER &lt;10% на реальных данных</li>
+        <li data-ru="Синтез речи с MOS &gt;4.3 — на уровне мировых лидеров; запустил продукт «Антиспуфинг» (детекция синтеза, EER ~1%) и за 2 месяца вывел в прод KWS (keyword spotting)" data-en="Speech synthesis at MOS &gt;4.3, on par with global leaders; launched an anti-spoofing product (synthesis detection, EER ~1%) and shipped KWS (keyword spotting) to production in 2 months">Синтез речи с MOS &gt;4.3 — на уровне мировых лидеров; запустил продукт «Антиспуфинг» (детекция синтеза, EER ~1%) и за 2 месяца вывел в прод KWS (keyword spotting)</li>
+        <li data-ru="Вывел платформу Audiogram на внешний рынок — первые прямые и партнёрские продажи (суммы под NDA)" data-en="Took Audiogram to the external market — first direct and partner sales (figures under NDA)">Вывел платформу Audiogram на внешний рынок — первые прямые и партнёрские продажи (суммы под NDA)</li>
+        <li data-ru="Ранее вёл продукт Tenvision (платформа видеонаблюдения и видеоаналитики, штат ~30, полный цикл): SLA 99,95%, активные камеры ×3 (5к→15к/день), выполнение годового roadmap с 30% до 100%; закрыл продукт из-за смены приоритетов группы" data-en="Earlier ran Tenvision (a video-surveillance and video-analytics platform, ~30 staff, full cycle): 99.95% SLA, 3× active cameras (5k→15k/day), annual roadmap delivery from 30% to 100%; closed the product after a shift in group priorities">Ранее вёл продукт Tenvision (платформа видеонаблюдения и видеоаналитики, штат ~30, полный цикл): SLA 99,95%, активные камеры ×3 (5к→15к/день), выполнение годового roadmap с 30% до 100%; закрыл продукт из-за смены приоритетов группы</li>
       </ul>
     </article>
 
@@ -67,9 +70,10 @@
       </div>
       <p class="role-title" data-ru="Ведущий менеджер по продукту — VMS TRASSIR" data-en="Lead Product Manager — TRASSIR VMS">Ведущий менеджер по продукту — VMS TRASSIR</p>
       <ul class="role-points">
-        <li data-ru="Лидировал разработку (команда 30+ человек) и продуктовое развитие видеосистемы" data-en="Led development (30+ engineers) and product strategy for a video management system">Лидировал разработку (команда 30+ человек) и продуктовое развитие видеосистемы</li>
-        <li data-ru="Рост прибыли на 16% в устоявшемся продукте — около x3 к среднему росту рынка" data-en="Grew profit by 16% in a mature product — roughly 3x the market's average growth">Рост прибыли на 16% в устоявшемся продукте — около x3 к среднему росту рынка</li>
-        <li data-ru="Реализован переход на 64-битную архитектуру без потери tNPS партнёров и клиентов" data-en="Delivered a 32→64-bit architecture migration without a drop in partner or customer tNPS">Реализован переход на 64-битную архитектуру без потери tNPS партнёров и клиентов</li>
+        <li data-ru="Лидировал разработку (30+ инженеров) и продуктовое развитие VMS TRASSIR; повысил прозрачность разработки и перевёл команду на квартальное планирование" data-en="Led development (30+ engineers) and product direction for TRASSIR VMS; raised engineering transparency and moved the team to quarterly planning">Лидировал разработку (30+ инженеров) и продуктовое развитие VMS TRASSIR; повысил прозрачность разработки и перевёл команду на квартальное планирование</li>
+        <li data-ru="Провёл платное обновление продукта с 32- на 64-битную архитектуру на консервативном рынке систем безопасности — без падения tNPS партнёров и клиентов" data-en="Delivered a paid 32→64-bit product upgrade on a conservative security market — with no drop in partner or customer tNPS">Провёл платное обновление продукта с 32- на 64-битную архитектуру на консервативном рынке систем безопасности — без падения tNPS партнёров и клиентов</li>
+        <li data-ru="Рост прибыли на 16% в зрелом продукте — около ×3 к среднему росту рынка" data-en="16% profit growth in a mature product — roughly 3× the market average">Рост прибыли на 16% в зрелом продукте — около ×3 к среднему росту рынка</li>
+        <li data-ru="Собрал roadmap на несколько периодов вперёд на основе рыночной аналитики; заложил поддержку отечественных ОС и вход в b2g" data-en="Built a multi-period roadmap from market analytics; laid the groundwork for domestic-OS support and b2g entry">Собрал roadmap на несколько периодов вперёд на основе рыночной аналитики; заложил поддержку отечественных ОС и вход в b2g</li>
       </ul>
     </article>
 
@@ -80,9 +84,10 @@
       </div>
       <p class="role-title" data-ru="Product Manager — облачная платформа видеонаблюдения" data-en="Product Manager — cloud video surveillance platform">Product Manager — облачная платформа видеонаблюдения</p>
       <ul class="role-points">
-        <li data-ru="Продвижение SaaS-платформы через партнёров (b2b); сформировал product vision" data-en="Drove partner-led (b2b) SaaS growth; defined product vision">Продвижение SaaS-платформы через партнёров (b2b); сформировал product vision</li>
-        <li data-ru="Разработал ценовую политику, лицензирование и прайс продукта" data-en="Designed the product's pricing policy, licensing and price list">Разработал ценовую политику, лицензирование и прайс продукта</li>
-        <li data-ru="Custdev и продуктовые гипотезы; постановка задач разработке по матричному принципу" data-en="Ran custdev and hypothesis testing; managed a matrixed engineering backlog">Custdev и продуктовые гипотезы; постановка задач разработке по матричному принципу</li>
+        <li data-ru="Отвечал за развитие облачной SaaS-платформы видеонаблюдения и её продвижение через партнёров (b2b); сформировал product vision" data-en="Owned a cloud SaaS video-surveillance platform and its partner-led (b2b) growth; defined the product vision">Отвечал за развитие облачной SaaS-платформы видеонаблюдения и её продвижение через партнёров (b2b); сформировал product vision</li>
+        <li data-ru="Исследование рынка и конкурентов, поиск точек роста" data-en="Market and competitor research; identified growth opportunities">Исследование рынка и конкурентов, поиск точек роста</li>
+        <li data-ru="Разработал ценовую политику, лицензирование и прайс продукта; настроил бизнес-процессы вокруг него" data-en="Designed the pricing policy, licensing and price list; set up the business processes around the product">Разработал ценовую политику, лицензирование и прайс продукта; настроил бизнес-процессы вокруг него</li>
+        <li data-ru="Генерация и проверка продуктовых гипотез, активный custdev; постановка задач разработке по матричному принципу" data-en="Generated and tested product hypotheses with active custdev; ran a matrixed engineering backlog">Генерация и проверка продуктовых гипотез, активный custdev; постановка задач разработке по матричному принципу</li>
       </ul>
     </article>
 
@@ -93,9 +98,10 @@
       </div>
       <p class="role-title" data-ru="Управляющий директор бизнес-единицы" data-en="Managing Director, Business Unit">Управляющий директор бизнес-единицы</p>
       <ul class="role-points">
-        <li data-ru="Рост выручки и прибыли x3 от базовых значений" data-en="Grew revenue and profit 3x from baseline">Рост выручки и прибыли x3 от базовых значений</li>
-        <li data-ru="Сформировал и возглавил команду 40+ сотрудников полного цикла" data-en="Built and led a full-cycle team of 40+ people">Сформировал и возглавил команду 40+ сотрудников полного цикла</li>
-        <li data-ru="Создал с нуля тендерный отдел, принёсший треть выручки компании в первый год" data-en="Built a tender department from scratch that generated a third of company revenue in its first year">Создал с нуля тендерный отдел, принёсший треть выручки компании в первый год</li>
+        <li data-ru="Рост выручки и прибыли ×3 от базовых значений; участие в разработке стратегии компании" data-en="3× revenue and profit growth from baseline; contributed to company strategy">Рост выручки и прибыли ×3 от базовых значений; участие в разработке стратегии компании</li>
+        <li data-ru="Сформировал и возглавил команду 40+ человек полного цикла — от проектирования до поддержки" data-en="Built and led a full-cycle team of 40+ — from design to support">Сформировал и возглавил команду 40+ человек полного цикла — от проектирования до поддержки</li>
+        <li data-ru="Отвечал за ключевые показатели бизнес-единицы: бюджетирование, контроль бюджета, регулярная работа с P&amp;L" data-en="Owned the unit's key metrics: budgeting, budget control, regular P&amp;L work">Отвечал за ключевые показатели бизнес-единицы: бюджетирование, контроль бюджета, регулярная работа с P&amp;L</li>
+        <li data-ru="Создал с нуля тендерный отдел, который в первый год принёс более трети выручки компании" data-en="Built a tender department from scratch that generated over a third of company revenue in its first year">Создал с нуля тендерный отдел, который в первый год принёс более трети выручки компании</li>
       </ul>
     </article>
   </section>
@@ -114,7 +120,7 @@
       <li data-ru="Масштабирование команд" data-en="Team Scaling">Масштабирование команд</li>
       <li data-ru="AI/ML платформы (STT/TTS)" data-en="AI/ML Platforms (STT/TTS)">AI/ML платформы (STT/TTS)</li>
       <li data-ru="Roadmapping" data-en="Roadmapping">Roadmapping</li>
-      <li data-ru="Cross-functional Leadership" data-en="Cross-functional Leadership">Cross-functional Leadership</li>
+      <li data-ru="Предсказуемость поставки" data-en="Delivery Predictability">Предсказуемость поставки</li>
     </ul>
   </section>
 

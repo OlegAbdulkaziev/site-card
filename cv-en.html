@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oleg Abdulkaziev — Head of Product · CV</title>
+<style>
+  :root {
+    --ink: #1d1d1f;
+    --soft: #6e6e73;
+    --accent: #0071e3;
+    --line: #d2d2d7;
+    --fill: #f5f5f7;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: #f5f5f7;
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+    line-height: 1.38;
+    letter-spacing: -0.005em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    max-width: 180mm;
+    margin: 24px auto;
+    padding: 26px 30px;
+    background: #fff;
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  /* ---------- Header ---------- */
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .head img {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 1px var(--line);
+    flex-shrink: 0;
+  }
+
+  .head h1 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0 0 3px;
+  }
+
+  .head .role {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 7px;
+  }
+
+  .head .contacts {
+    font-size: 10.5px;
+    color: var(--soft);
+    line-height: 1.6;
+  }
+
+  .head .contacts span {
+    white-space: nowrap;
+  }
+
+  .rule {
+    height: 2px;
+    background: var(--accent);
+    opacity: 0.5;
+    margin: 12px 0 11px;
+  }
+
+  .about {
+    font-size: 10.5px;
+    color: var(--soft);
+    margin: 0 0 14px;
+  }
+
+  /* ---------- Sections ---------- */
+  h2 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    margin: 0 0 10px;
+  }
+
+  .role-item {
+    margin-bottom: 11px;
+  }
+
+  .role-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .role-item .line1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .role-item .company {
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .role-item .period {
+    font-size: 10px;
+    color: var(--soft);
+    white-space: nowrap;
+  }
+
+  .role-item .post {
+    font-size: 10px;
+    color: var(--ink);
+    margin: 2px 0 4px;
+  }
+
+  .role-item ul {
+    margin: 0;
+    padding-left: 15px;
+  }
+
+  .role-item li {
+    font-size: 10px;
+    color: var(--soft);
+    margin-bottom: 2px;
+  }
+
+  .role-item li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ---------- Footer grid ---------- */
+  .foot {
+    margin-top: 13px;
+    padding-top: 11px;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 28px;
+    font-size: 9.5px;
+    color: var(--soft);
+  }
+
+  .foot b {
+    display: block;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--ink);
+    margin-bottom: 3px;
+  }
+
+  .foot .chips {
+    grid-column: 1 / -1;
+  }
+
+  /* ---------- Print ---------- */
+  @page {
+    size: A4;
+    margin: 13mm 14mm;
+  }
+
+  @media print {
+    body {
+      background: #fff;
+    }
+    .sheet {
+      width: auto;
+      min-height: 0;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+    * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+  <header class="head">
+    <img src="photo.jpg" alt="Oleg Abdulkaziev">
+    <div>
+      <h1>Oleg Abdulkaziev</h1>
+      <p class="role">Head of Product</p>
+      <p class="contacts">
+        <span>+7 925 269-77-39</span> &nbsp;·&nbsp;
+        <span>abdulkaziev@gmail.com</span> &nbsp;·&nbsp;
+        <span>Telegram @abdulkazievoleg</span><br>
+        <span>github.com/OlegAbdulkaziev</span> &nbsp;·&nbsp;
+        <span>linkedin.com/in/oleg-abdulkaziev-246213a6</span>
+      </p>
+    </div>
+  </header>
+
+  <div class="rule"></div>
+
+  <p class="about">
+    Head of Product with experience leading large distributed teams (70+) and building AI/ML
+    platforms: speech technology (STT/TTS) and video analytics / surveillance. Managing
+    full-cycle ML teams — research, training, productization. Focus: product strategy and
+    growth, P&amp;L management, scaling teams and planning processes, improving quality and
+    delivery predictability.
+  </p>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="role-item">
+      <div class="line1">
+        <span class="company">MWS AI (ex. MTS AI)</span>
+        <span class="period">Mar 2023 — present</span>
+      </div>
+      <p class="post">Head of Product — Audiogram STT/TTS platform</p>
+      <ul>
+        <li>Set the product vision and rebuilt the roadmap around it; introduced quarterly planning combining bottom-up team input with top-down stakeholder goals</li>
+        <li>Led a distributed team of 70+ (about half ML engineers) across research → training → productization; cut it to 25 with no loss of output — through sharper focus, less bureaucracy and a bet on strong performers</li>
+        <li>Built one of the market's best Russian speech recognition: an ensemble of models per surface, telephony focus, WER &lt;10% on real-world audio</li>
+        <li>Speech synthesis at MOS &gt;4.3, on par with global leaders; launched an anti-spoofing product (synthesis detection, EER ~1%) and shipped KWS (keyword spotting) to production in 2 months</li>
+        <li>Took Audiogram to the external market — first direct and partner sales (figures under NDA)</li>
+        <li>Earlier ran Tenvision (a video-surveillance and video-analytics platform, ~30 staff, full cycle): 99.95% SLA, 3× active cameras (5k→15k/day), annual roadmap delivery from 30% to 100%; closed the product after a shift in group priorities</li>
+      </ul>
+    </div>
+
+    <div class="role-item">
+      <div class="line1">
+        <span class="company">DSSL</span>
+        <span class="period">Sep 2021 — Mar 2023</span>
+      </div>
+      <p class="post">Lead Product Manager — TRASSIR VMS</p>
+      <ul>
+        <li>Led development (30+ engineers) and product direction for TRASSIR VMS; raised engineering transparency and moved the team to quarterly planning</li>
+        <li>Delivered a paid 32→64-bit product upgrade on a conservative security market — with no drop in partner or customer tNPS</li>
+        <li>16% profit growth in a mature product — roughly 3× the market average</li>
+        <li>Built a multi-period roadmap from market analytics; laid the groundwork for domestic-OS support and b2g entry</li>
+      </ul>
+    </div>
+
+    <div class="role-item">
+      <div class="line1">
+        <span class="company">ITV</span>
+        <span class="period">Sep 2019 — Mar 2021</span>
+      </div>
+      <p class="post">Product Manager — cloud video surveillance platform</p>
+      <ul>
+        <li>Owned a cloud SaaS video-surveillance platform and its partner-led (b2b) growth; defined the product vision</li>
+        <li>Market and competitor research; identified growth opportunities</li>
+        <li>Designed the pricing policy, licensing and price list; set up the business processes around the product</li>
+        <li>Generated and tested product hypotheses with active custdev; ran a matrixed engineering backlog</li>
+      </ul>
+    </div>
+
+    <div class="role-item">
+      <div class="line1">
+        <span class="company">Videoglaz Proekt</span>
+        <span class="period">Apr 2016 — Apr 2019</span>
+      </div>
+      <p class="post">Managing Director, Business Unit</p>
+      <ul>
+        <li>3× revenue and profit growth from baseline; contributed to company strategy</li>
+        <li>Built and led a full-cycle team of 40+ — from design to support</li>
+        <li>Owned the unit's key metrics: budgeting, budget control, regular P&amp;L work</li>
+        <li>Built a tender department from scratch that generated over a third of company revenue in its first year</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="foot">
+    <div>
+      <b>Education</b>
+      Stavropol State University, Stavropol — Faculty of Physics and Mathematics,
+      "Information Security Organization and Technology", 2012.
+    </div>
+    <div>
+      <b>Languages</b>
+      English — B2 (goal: IELTS / C1 in 2026). References on request.
+    </div>
+    <div class="chips">
+      <b>Focus</b>
+      Product Strategy · P&amp;L Management · Team Scaling · AI/ML Platforms (STT/TTS) ·
+      Roadmapping · Delivery Predictability
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
